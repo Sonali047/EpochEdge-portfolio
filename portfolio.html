@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/icon" href="image/88.gif">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpochEdge</title>
+    <!-- box icons -->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--header designer-->
+    <header class="header">
+        <a href="#" class="logo"><i class="fa fa-camera" aria-hidden="true"> EpochEdge</i></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home"> Home</a>
+            <a href="#About"> About</a>
+            <a href="#Features"> features</a>
+            <a href="#Contact"> Contact</a>
+
+
+        </nav>
+
+    </header>
+
+    <!-- home section design -->
+
+    <section class="home" id="home">
+            <div class="home-content">   
+                <h3>Hello, It's </h3>
+                <h1>EpochEdge group </h1>
+                <h3>A <span>Fullstack Developer Group</span></h3>
+                <p>Just feel free to take wounderful photos in any event because we are here to help you to collect those photos you want</p>                
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+                <a href="../auth.php" class="btn">SignUp\SignIn</a>
+            </div>
+
+            <div class="home-img">
+                <img src="image/x.jpg" alt="">
+            </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="About" id="About">
+        <div class="About-img">
+
+            <img src="image/y.jpg" alt="">
+
+        </div>
+
+        <div class="About-content">
+
+            <h2 class="heading">About Our <span>Project</span></h2>
+            <h3>Fullstack Developer!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore officia
+            asperiores labore officiis
+            suscipit ex at non impedit nostrum animi illum mollitia itaque reprehenderit
+            laudantium molestiae eum
+            porro molestias repudiandae, amet ea eos alias corporis laborum nobis. Tempore
+            deserunt repellendus quos
+            nihil voluptas aut est suscipit.</p>
+           
+        </div>
+
+    </section>
+
+    <!-- Features section design -->
+    <section class="Features" id="Features">
+        <div class="container" id="blur" >
+        <h2 class="heading">Our <span>Features</span></h2>
+        <div class="Features-container">
+            <div class="Features-box">
+                <i class='bx bxs-download'></i>
+                <h3>Get session images</h3>
+                <p>its the best way to share your pictures to many people's with privacy and security</p>
+                <a href="#popup" onclick="toggle()" class="btn">Read More</a>
+            </div>
+            
+            <div class="Features-box">
+                <i class='bx bx-upload'></i>
+                <h3>Upload your images</h3>
+                <p>its the best way to share your pictures to many people's with privacy and security</p>
+                <a href="#popup1" onclick="toggle1()" class="btn">Read More</a>
+            </div>
+
+            <div class="Features-box">
+                <i class='bx bxs-cloud-download'></i>
+                <h3>Get your own images</h3>
+                <p>its the best way to collect your pictures to your friends with privacy and security</p>
+                <a href="#popup2" onclick="toggle2()" class="btn">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <h1>How to get session image</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, omnis nam qui illo a dolorem non suscipit dignissimos. Quasi veniam delectus cum ad quibusdam cupiditate iusto illum deleniti beatae officia.</p>
+        <a href="#popup" class="btn1" onclick="toggle()">close</a>
+    </div>
+    <div id="popup1">
+        <h1>How to upload your images</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, omnis nam qui illo a dolorem non suscipit dignissimos. Quasi veniam delectus cum ad quibusdam cupiditate iusto illum deleniti beatae officia.</p>
+        <a href="#popup1" class="btn1" onclick="toggle1()">close</a>
+    </div>
+    <div id="popup2">
+        <h1>How to get your own images</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, omnis nam qui illo a dolorem non suscipit dignissimos. Quasi veniam delectus cum ad quibusdam cupiditate iusto illum deleniti beatae officia.</p>
+        <a href="#popup2" class="btn1" onclick="toggle2()">close</a>
+    </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="Contact" id="Contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" ></textarea>
+            <input type="submit" value="Send Messaage" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p> created by <span>EpochEdge group</span> | all rights reserved</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-up-arrow-circle'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script> 
+
+
+    <!--custome js-->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
+
+
