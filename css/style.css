@@ -98,7 +98,7 @@ section
 .home-content h3:nth-of-type(2) 
 {
     margin-bottom: 2rem;
-    
+
 }
 span 
 { 
@@ -137,7 +137,7 @@ span
 .home-content p 
 {
     font-size: 1.4rem;
-    
+
 }
 
 .social-media a
@@ -176,6 +176,9 @@ span
 }
 .btn1 
 {
+    justify-content: center;
+    align-items: center;
+    position: center;
     display: inline-block;
     padding: 0.5rem 1.8rem;
     background: white;
@@ -223,7 +226,7 @@ span
 
 .About-content p
 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 2rem 0 3rem;
 }
 .container#blur.active
@@ -253,7 +256,7 @@ span
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
-    
+
 }
 #popup1
 {
@@ -276,7 +279,7 @@ span
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
-    
+
 }
 #popup2
 {
@@ -299,7 +302,7 @@ span
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
-    
+
 }
 
 .Features h2 
@@ -401,16 +404,13 @@ span
     flex-wrap: wrap;
     padding: 2rem 9%;
     background: var(--second-bg-color);
-    
+
 }
 .footer-text p
 {
     font-size: 1.5rem;
     text-align: center;
     justify-content: center;
-    
-    
-   
 }
 
 .footer-iconTop a 
@@ -476,7 +476,7 @@ span
         box-shadow: 0.5rem 1rem ☐ rgba(0, 0, 0, 2);
         display: none;
     }
-
+    
     .navbar.active 
     {
         display: block;
@@ -491,6 +491,7 @@ span
 
     .home 
     {
+        margin-top: 2rem;
         flex-direction: column;
     }
 
@@ -523,8 +524,12 @@ span
     {
         min-height: auto;
     }
+    #popup, #popup1, #popup2
+    {
+          width: 90%;
+          padding: 15px;
+    }
 
-    
 }
 
 @media (max-width: 450px) 
@@ -537,6 +542,24 @@ span
     {
         width: 100%;
     }
+
+    #popup, #popup1, #popup2
+    {
+          width: 90%;
+          padding: 15px;
+    }
+
+    /* #popup h1
+    {
+        font-size: 1.3em;
+    }
+
+    #popup p
+    {
+        font-size: 0.9em;
+    } */
+    
+
 }
 
 @media (max-width: 365px) 
@@ -559,4 +582,25 @@ span
         text-align: center;
         margin-top: 2rem;
     }
+
+    #popup, #popup1, #popup2
+    {
+        width: 70%;
+        padding: 10px;
+    }
+
+    /* #popup h1
+    {
+        font-size: 1.1em;
+    }
+
+    #popup p
+    {
+        font-size: 0.8em;
+    }
+
+    #popup .btn1
+    {
+        padding: 8px 16px;
+    } */
 }
