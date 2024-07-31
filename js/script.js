@@ -71,3 +71,29 @@ function toggle2()
     var popup2 = document.getElementById('popup2');
     popup2.classList.toggle('active');
 }
+
+
+const FULLNAME = document.querySelector(".full-name");
+const EMAIL_ADDRESS = document.querySelector(".email-address");
+const MOBILE = document.querySelector(".mobile-num");
+const EMAIL_SUBJECT = document.querySelector(".email-subject");
+const EMAIL_MESSAGE = document.querySelector(".email-message");
+const SEND_BUTTON = document.querySelector(".send-message");
+
+SEND_BUTTON.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (FULLNAME.value.trim() === "" || EMAIL_ADDRESS.value.trim() === "" || MOBILE.value.trim() === "" || EMAIL_SUBJECT.value.trim() === "" || EMAIL_MESSAGE.value.trim() === "") {
+        alert("Please fill all the fields");
+        return;
+    }
+    const data = {
+        fullName: FULLNAME.value.trim(),
+        emailAddress: EMAIL_ADDRESS.value.trim(),
+        phone: MOBILE.value.trim(),
+        emailSubject: EMAIL_SUBJECT.value.trim(),
+        emailMessage: EMAIL_MESSAGE.value.trim(),
+    };
+
+
+    fetch("/post-review/", { method: "POST", body: JSON.stringify(data) })
+})
